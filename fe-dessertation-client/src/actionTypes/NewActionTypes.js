@@ -1,0 +1,1 @@
+export const LOAD_NEW = 'LOAD_NEW';

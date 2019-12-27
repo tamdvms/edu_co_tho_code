@@ -1,0 +1,2 @@
+export const LOAD_LIST_MEDIA = 'LOAD_LIST_MEDIA';
+

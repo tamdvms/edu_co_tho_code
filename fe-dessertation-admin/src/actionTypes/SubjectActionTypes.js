@@ -1,0 +1,5 @@
+export const LOAD_ALL_SUBJECT = 'LOAD_ALL_SUBJECT';
+export const DELETE_SUBJECT = 'DELETE_SUBJECT';
+export const ADD_SUBJECT = 'ADD_SUBJECT';
+export const UPDATE_SUBJECT = 'UPDATE_SUBJECT';
+export const UPDATE_STATUS = 'UPDATE_STATUS';

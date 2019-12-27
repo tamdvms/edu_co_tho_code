@@ -1,0 +1,5 @@
+export const LOAD_ALL_SCHOOL = 'LOAD_ALL_SCHOOL';
+export const DELETE_SCHOOL = 'DELETE_SCHOOL';
+export const ADD_SCHOOL = 'ADD_SCHOOL';
+export const UPDATE_SCHOOL = 'UPDATE_SCHOOL';
+export const UPDATE_STATUS = 'UPDATE_STATUS';

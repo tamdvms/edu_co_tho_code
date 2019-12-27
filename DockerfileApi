@@ -1,0 +1,17 @@
+FROM node:8
+
+RUN apt-get update 
+RUN apt-get install -y tzdata
+
+WORKDIR /opt
+
+COPY ./pjnew ./source
+
+WORKDIR /opt/source
+
+RUN npm install -g sails
+RUN npm install
+
+EXPOSE {PORT}
+
+CMD [ "node", "app.js", "--prod"]

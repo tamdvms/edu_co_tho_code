@@ -1,0 +1,4 @@
+export const LOAD_ALL_STATUS = 'LOAD_ALL_STATUS';
+export const DELETE_STATUS = 'DELETE_STATUS';
+export const ADD_STATUS = 'ADD_STATUS';
+export const UPDATE_STATUS = 'UPDATE_STATUS';

@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6 offset-lg-3">
+                <div class="mb-2">
+                    <h1>Sector</h1>
+                    <h5>add /sector/add </h5>
+                    <form action="/sector/add" method="POST">
+                        <div class="form-group">
+                            <textarea class="form-control" name="data" cols="30" rows="2"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Gửi" class="btn btn-success" />
+                        </div>
+                    </form>
+                    <h5>update /sector/update </h5>
+                    <form action="/sector/update" method="POST">
+                        <div class="form-group">
+                            <textarea class="form-control" name="data" cols="30" rows="2"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Gửi" class="btn btn-success" />
+                        </div>
+                    </form>
+                    <h5>delete /sector/delete </h5>
+                    <form action="/sector/delete" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="id" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Gửi" class="btn btn-success" />
+                        </div>
+                    </form>
+                    </form>
+                    <h5>view list /sector/getall </h5>
+                    <form action="/sector/getall" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="page" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Xem" class="btn btn-success" />
+                        </div>
+                    </form>
+                </div>
+
+                <hr>
+
+                <div class="mb-2">
+                    <h1>Province</h1>
+                    <h5>add /province/add </h5>
+                    <form action="/province/add" method="POST">
+                        <div class="form-group">
+                            <textarea class="form-control" name="data" cols="30" rows="2"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Gửi" class="btn btn-success" />
+                        </div>
+                    </form>
+                    <h5>update /province/update </h5>
+                    <form action="/province/update" method="POST">
+                        <div class="form-group">
+                            <textarea class="form-control" name="data" cols="30" rows="2"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Gửi" class="btn btn-success" />
+                        </div>
+                    </form>
+                    <h5>delete /province/delete </h5>
+                    <form action="/province/delete" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="id" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Gửi" class="btn btn-success" />
+                        </div>
+                    </form>
+                    </form>
+                    <h5>view list /province/getall </h5>
+                    <form action="/province/getall" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="page" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Xem" class="btn btn-success" />
+                        </div>
+                    </form>
+                </div>
+
+                <hr>
+
+                <div class="mb-2">
+                    <h1>School</h1>
+                    <h5>add /school/add </h5>
+                    <form action="/school/add" method="POST">
+                        <div class="form-group">
+                            <textarea class="form-control" name="data" cols="30" rows="2"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Gửi" class="btn btn-success" />
+                        </div>
+                    </form>
+                    <h5>update /school/update </h5>
+                    <form action="/school/update" method="POST">
+                        <div class="form-group">
+                            <textarea class="form-control" name="data" cols="30" rows="2"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Gửi" class="btn btn-success" />
+                        </div>
+                    </form>
+                    <h5>delete /school/delete </h5>
+                    <form action="/school/delete" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="id" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Gửi" class="btn btn-success" />
+                        </div>
+                    </form>
+                    </form>
+                    <h5>view list /school/getall </h5>
+                    <form action="/school/getall" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="page" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Xem" class="btn btn-success" />
+                        </div>
+                    </form>
+                </div>
+
+                <hr>
+
+                <div class="mb-2">
+                    <h1>subject</h1>
+                    <h5>add /subject/add </h5>
+                    <form action="/subject/add" method="POST">
+                        <div class="form-group">
+                            <textarea class="form-control" name="data" cols="30" rows="2"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Gửi" class="btn btn-success" />
+                        </div>
+                    </form>
+                    <h5>update /subject/update </h5>
+                    <form action="/subject/update" method="POST">
+                        <div class="form-group">
+                            <textarea class="form-control" name="data" cols="30" rows="2"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Gửi" class="btn btn-success" />
+                        </div>
+                    </form>
+                    <h5>delete /subject/delete </h5>
+                    <form action="/subject/delete" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="id" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Gửi" class="btn btn-success" />
+                        </div>
+                    </form>
+                    </form>
+                    <h5>view list /subject/getall </h5>
+                    <form action="/subject/getall" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="page" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Xem" class="btn btn-success" />
+                        </div>
+                    </form>
+                </div>
+
+                <hr>
+
+                <div class="mb-2">
+                    <h1>subjectGroup</h1>
+                    <h5>add /subjectGroup/add </h5>
+                    <form action="/subjectGroup/add" method="POST">
+                        <div class="form-group">
+                            <textarea class="form-control" name="data" cols="30" rows="2"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Gửi" class="btn btn-success" />
+                        </div>
+                    </form>
+                    <h5>update /subjectGroup/update </h5>
+                    <form action="/subjectGroup/update" method="POST">
+                        <div class="form-group">
+                            <textarea class="form-control" name="data" cols="30" rows="2"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Gửi" class="btn btn-success" />
+                        </div>
+                    </form>
+                    <h5>delete /subjectGroup/delete </h5>
+                    <form action="/subjectGroup/delete" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="id" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Gửi" class="btn btn-success" />
+                        </div>
+                    </form>
+                    </form>
+                    <h5>view list /subjectGroup/getall </h5>
+                    <form action="/subjectGroup/getall" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="page" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Xem" class="btn btn-success" />
+                        </div>
+                    </form>
+                </div>
+
+                <hr>
+
+                <div class="mb-2">
+                    <h1>major</h1>
+                    <h5>add /major/add </h5>
+                    <form action="/major/add" method="POST">
+                        <div class="form-group">
+                            <textarea class="form-control" name="data" cols="30" rows="2"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Gửi" class="btn btn-success" />
+                        </div>
+                    </form>
+                    <h5>update /major/update </h5>
+                    <form action="/major/update" method="POST">
+                        <div class="form-group">
+                            <textarea class="form-control" name="data" cols="30" rows="2"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Gửi" class="btn btn-success" />
+                        </div>
+                    </form>
+                    <h5>delete /major/delete </h5>
+                    <form action="/major/delete" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="id" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Gửi" class="btn btn-success" />
+                        </div>
+                    </form>
+                    </form>
+                    <h5>view list /major/getall </h5>
+                    <form action="/major/getall" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="page" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Xem" class="btn btn-success" />
+                        </div>
+                    </form>
+                </div>
+
+                <hr>
+
+                <div class="mb-2">
+                    <h1>mark</h1>
+                    <h5>add /mark/add </h5>
+                    <form action="/mark/add" method="POST">
+                        <div class="form-group">
+                            <textarea class="form-control" name="data" cols="30" rows="2"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Gửi" class="btn btn-success" />
+                        </div>
+                    </form>
+                    <h5>update /mark/update </h5>
+                    <form action="/mark/update" method="POST">
+                        <div class="form-group">
+                            <textarea class="form-control" name="data" cols="30" rows="2"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Gửi" class="btn btn-success" />
+                        </div>
+                    </form>
+                    <h5>delete /mark/delete </h5>
+                    <form action="/mark/delete" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="id" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Gửi" class="btn btn-success" />
+                        </div>
+                    </form>
+                    </form>
+                    <h5>view list /mark/getall </h5>
+                    <form action="/mark/getall" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="page" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Xem" class="btn btn-success" />
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

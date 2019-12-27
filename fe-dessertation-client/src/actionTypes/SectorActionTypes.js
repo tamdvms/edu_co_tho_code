@@ -1,0 +1,5 @@
+export const LOAD_ALL_SECTOR = 'LOAD_ALL_SECTOR';
+export const DELETE_SECTOR = 'DELETE_SECTOR';
+export const ADD_SECTOR = 'ADD_SECTOR';
+export const UPDATE_SECTOR = 'UPDATE_SECTOR';
+export const UPDATE_STATUS = 'UPDATE_STATUS';

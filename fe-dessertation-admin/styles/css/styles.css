@@ -1,0 +1,156 @@
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    height: 100vh !important;
+}
+
+.h-hand:hover {
+    cursor: pointer;
+}
+
+.pd-rl-1 {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.bd-r {
+    border-right: 2px solid #adadad;
+}
+
+.is-lock::before, .is-pending::before, .is-active::before, .is-delete::before {
+    width: 15px;
+    height: 15px;
+}
+
+.is-lock::before {
+    content: "\F023";
+    color: black;
+}
+
+.is-pending::before {
+    content: "\F110";
+    color: orange;
+}
+
+.is-active::before {
+    content: "\F046";
+    color: green;
+}
+
+.is-delete::before {
+    content: "\f05e";
+    color: red;
+}
+
+.is-pending:hover::before, .is-lock:hover::before, .is-delete:hover::before {
+    content: "\F046";
+    color: green;
+}
+
+.is-active:hover::before {
+    content: "\F023";
+    color: black;
+}
+
+.w-1 {
+    width: 26px;
+}
+
+.lh-35 {
+    line-height: 35px;
+}
+
+.datepick {
+    border: 1px solid #d4d4d4;
+    position: absolute;
+    z-index: 10;
+    left: -50%;
+    top: 80%;
+}
+
+.wc-100 > div {
+    width: 100%;
+}
+
+.c-red {
+    color: red;
+}
+
+.fa-trash {
+    color: red;
+}
+
+.fa-edit {
+    color: blue;
+}
+
+table td, table th {
+    vertical-align: middle !important;
+}
+
+.box-body table tr:nth-child(even) {
+    background-color: #ececec;
+}
+
+#my-loading {
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000085;
+    z-index: 100000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    text-align: center;
+}
+
+#my-loading > i {
+    margin-top: 40vh;
+}
+
+.cus-error {
+    box-shadow: 0 0 1px 0px red;
+    border: 1px solid red;
+}
+
+.drop_zone {
+    cursor: pointer;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #00b200;
+    border: 5px dotted #00b200;
+}
+
+.box-mediaUpload {
+    width: 100%;
+    padding: 0;
+    padding-bottom: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid #adadad;
+    cursor: pointer;
+}
+
+.box-mediaUpload:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+#loading-com {
+    position: fixed;
+    z-index: 1000000;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.68);
+}
