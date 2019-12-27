@@ -5,7 +5,7 @@ networks:
       name: edu_network
 
 services:
-  edu_db:
+  edu_mongodb:
     image: vantam010189/edu_mongodb:1.0
     container_name: edu_mogodb
     restart: always
