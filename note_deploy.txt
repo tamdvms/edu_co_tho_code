@@ -12,3 +12,6 @@
 
 - Build image and start system
 	- Ref: build.sh
+
+- Account mặc định:
+	admin/admin113

@@ -24,3 +24,6 @@ yum install policycoreutils-python -y
 setsebool httpd_can_network_connect on -P
 getsebool -a | grep httpd
 
+# Clone source
+cd /opt
+git clone https://github.com/tamdvms/edu_co_tho_code.git
