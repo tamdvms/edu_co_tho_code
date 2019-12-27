@@ -1,3 +1,3 @@
- export const HOST = 'http://localhost:1337/admin/';
-//export const HOST = 'http://139.180.209.238:8082/admin/';
+// export const HOST = 'http://localhost:1337/admin/';
+export const HOST = 'http://34.68.139.112:8081/admin/';
 // export const HOST = 'http://localhost:1337/admin/';
