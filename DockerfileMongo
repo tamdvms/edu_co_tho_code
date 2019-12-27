@@ -1,0 +1,15 @@
+FROM mongo:3.4
+
+RUN apt-get update
+
+WORKDIR /opt
+
+COPY ./sailsModel ./sailsModel
+
+RUN ls
+
+RUN mongorestore --db sailsModel sailsModel
+
+EXPOSE 27017
+
+CMD [ "node", "app.js", "--prod"]
