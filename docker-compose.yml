@@ -11,7 +11,7 @@ services:
     ports:
       - "127.0.0.1:27017:27017"
     networks:
-        - mongo_basic
+        - basic
   edu_api:
     image: edu_api:1.0
     container_name: edu_api
