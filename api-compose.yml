@@ -2,8 +2,6 @@ version: '2'
 
 networks:
   api_basic:
-    external:
-      name: edu_network
 
 services:
   db:
