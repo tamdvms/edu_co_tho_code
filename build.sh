@@ -1,6 +1,3 @@
-# Move to workspace
-cd /opt/edu_co_tho_code
-
 # Create network for deploy
 #docker network create edu_network
 
