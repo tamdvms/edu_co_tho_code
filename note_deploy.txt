@@ -4,4 +4,5 @@
 - Create build mongodb and copy database(Optional):
 	- Ref: DockerfileMongo
 
-- 
+- Build image and start system
+	- Ref: build.sh
