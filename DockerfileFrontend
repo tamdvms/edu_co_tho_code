@@ -4,13 +4,15 @@ WORKDIR /opt
 COPY ./fe-dessertation-client .
 
 WORKDIR /opt/fe-dessertation-client
+
 RUN npm install
+
 RUN npm run build
 
 RUN ls
 
 WORKDIR /opt
-RUN cp ./fe-dessertation-client/dist .
+RUN mv ./fe-dessertation-client/dist .
 COPY ./fe-dessertation-client/appServer.js .
 COPY ./fe-dessertation-client/package.json .
 RUN mv ./fe-dessertation-client/node_modules .
