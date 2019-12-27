@@ -1,7 +1,7 @@
 FROM node:8
 
 WORKDIR /opt
-COPY ./fe-dessertation-client/ .
+COPY ./fe-dessertation-client/ ./fe-dessertation-client
 RUN ls
 
 WORKDIR /opt/fe-dessertation-client
