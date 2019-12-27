@@ -4,5 +4,11 @@
 - Create build mongodb and copy database(Optional):
 	- Ref: DockerfileMongo
 
+- Update Ip or domain for api config for frontend and backend
+	- Frontend
+		Edit file: fe-dessertation-client/src/contants/index.js
+	- Backend
+		Edit file: fe-dessertation-admin/src/contants/index.js
+
 - Build image and start system
 	- Ref: build.sh

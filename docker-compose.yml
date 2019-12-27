@@ -17,7 +17,7 @@ services:
     container_name: edu_api
     restart: always
     ports:
-      - "127.0.0.1:8083:8083"
+      - "0.0.0.0:8083:8083"
     networks:
         - basic
     depends_on:
@@ -27,7 +27,7 @@ services:
     container_name: edu_fe
     restart: always
     ports:
-      - "127.0.0.1:8082:8082"
+      - "0.0.0.0:8082:8082"
     networks:
         - basic
     depends_on:
@@ -38,7 +38,7 @@ services:
     container_name: edu_be
     restart: always
     ports:
-      - "127.0.0.1:8081:8081"
+      - "0.0.0.0:8081:8081"
     networks:
         - basic
     depends_on:
