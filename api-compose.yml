@@ -1,7 +1,7 @@
 networks:
   api_basic:
     external:
-    name: edu_network
+      name: edu_network
 
 services:
   db:
