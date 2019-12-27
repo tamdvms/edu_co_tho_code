@@ -1,0 +1,14 @@
+networks:
+  mongo_basic:
+    external:
+    name: edu_network
+
+services:
+  db:
+    image: vantam010189/edu_mongodb:1.0
+    container_name: mongodb
+    restart: always
+    ports:
+      - "127.0.0.1:27017:27017"
+    networks:
+        - mongo_basic

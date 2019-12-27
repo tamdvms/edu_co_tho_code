@@ -1,15 +1,8 @@
+# Build command: docker build -f DockerfileMongo -t edu_mongo:1.0 .
+# docker tag edu_mongo:1.0 vantam010189/edu_mongodb:1.0
+# docker push vantam010189/edu_mongodb:1.0
 FROM mongo:3.4
-
-RUN apt-get update
-
-WORKDIR /opt
-
-COPY ./sailsModel ./sailsModel
-
-RUN ls
-
-RUN mongorestore --db sailsModel sailsModel
-
-EXPOSE 27017
-
-CMD [ "node", "app.js", "--prod"]
+#RUN apt-get update
+RUN rm -rf /data/db/*
+COPY --chown=mongodb:mongodb ./mongo /data/db
+RUN ls /data/db/

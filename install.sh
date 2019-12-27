@@ -19,3 +19,8 @@ docker-compose version
 # Install nginx
 yum install nginx -y
 
+# Allow nginx upstream
+yum install policycoreutils-python -y
+setsebool httpd_can_network_connect on -P
+getsebool -a | grep httpd
+

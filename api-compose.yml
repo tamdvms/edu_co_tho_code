@@ -1,0 +1,14 @@
+networks:
+  api_basic:
+    external:
+    name: edu_network
+
+services:
+  db:
+    image: edu_api:1.0
+    container_name: edu_api
+    restart: always
+    ports:
+      - "127.0.0.1:8083:8083"
+    networks:
+        - api_basic
