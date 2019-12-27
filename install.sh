@@ -1,5 +1,5 @@
-# Install wget and git
-yum install wget git -y
+# Install wget
+yum install wget -y
 
 # Installl docker
 yum install -y yum-utils device-mapper-persistent-data lvm2
