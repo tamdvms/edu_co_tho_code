@@ -3,8 +3,6 @@ FROM node:8
 WORKDIR /opt
 COPY ./fe-dessertation-client .
 
-RUN ls
-
 WORKDIR /opt/fe-dessertation-client
 
 RUN npm install
@@ -18,8 +16,6 @@ RUN mv ./fe-dessertation-client/dist .
 COPY ./fe-dessertation-client/appServer.js .
 COPY ./fe-dessertation-client/package.json .
 RUN mv ./fe-dessertation-client/node_modules .
-
-RUN ls
 
 EXPOSE 8082
 
