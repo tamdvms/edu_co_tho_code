@@ -9,9 +9,10 @@ RUN npm install
 
 RUN npm run build
 
-RUN ls
+
 
 WORKDIR /opt
+RUN ls ./fe-dessertation-client
 RUN mv ./fe-dessertation-client/dist .
 COPY ./fe-dessertation-client/appServer.js .
 COPY ./fe-dessertation-client/package.json .
