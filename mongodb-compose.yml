@@ -7,7 +7,7 @@ networks:
 services:
   db:
     image: vantam010189/edu_mongodb:1.0
-    container_name: mongodb
+    container_name: edu_mogodb
     restart: always
     ports:
       - "127.0.0.1:27017:27017"
