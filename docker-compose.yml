@@ -33,3 +33,14 @@ services:
     depends_on:
       - edu_mongodb
       - edu_api
+  edu_be:
+    image: edu_be:1.0
+    container_name: edu_be
+    restart: always
+    ports:
+      - "127.0.0.1:8081:8081"
+    networks:
+        - basic
+    depends_on:
+      - edu_mongodb
+      - edu_api
