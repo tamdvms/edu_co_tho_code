@@ -3,6 +3,8 @@ FROM node:8
 WORKDIR /opt
 COPY ./fe-dessertation-client .
 
+RUN ls
+
 WORKDIR /opt/fe-dessertation-client
 
 RUN npm install
