@@ -8,8 +8,8 @@ docker-compose -f mongodb-compose.yml up -d
 sleep 10
 
 #Start api
-docker build -f DockerfileMongo -t edu_api:1.0 .
-docker-compose -f mongodb-compose.yml up -d
+docker build -f DockerfileApi -t edu_api:1.0 .
+docker-compose -f api-compose.yml up -d
 
 
 

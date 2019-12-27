@@ -12,6 +12,6 @@ WORKDIR /opt/source
 RUN npm install -g sails
 RUN npm install
 
-EXPOSE {PORT}
+EXPOSE 8083
 
 CMD [ "node", "app.js", "--prod", "--port 8083"]
