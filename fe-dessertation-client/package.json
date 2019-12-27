@@ -14,7 +14,6 @@
         "build:html": "babel-node tools/buildHtml.js",
         "prebuild": "npm-run-all clean-dist gulp build:html",
         "build": "babel-node tools/build.js",
-        "postbuild": "babel-node appServer.js",
         "prebuildtest": "npm-run-all clean-dist gulp build:html",
         "buildtest": "babel-node tools/buildTest.js"
     },

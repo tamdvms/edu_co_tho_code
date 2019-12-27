@@ -12,6 +12,9 @@ RUN cp ./fe-dessertation-client/dist ./dist
 COPY ./fe-dessertation-client/appServer.js .
 COPY ./fe-dessertation-client/package.json .
 RUN mv ./fe-dessertation-client .
+
+RUN ls
+
 EXPOSE 8082
 
 CMD [ "node", "appServer.js" ]
