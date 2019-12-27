@@ -1,10 +1,16 @@
 FROM node:8
+WORKDIR /opt
+COPY ./fe-dessertation-admin/ ./fe-dessertation-admin
+
+WORKDIR /opt/fe-dessertation-admin
+RUN npm install
+RUN npm run build
 
 WORKDIR /opt
-COPY ./fe-dessertation-admin/dist ./dist
+RUN mv ./fe-dessertation-admin/dist .
 COPY ./fe-dessertation-admin/appServer.js .
 COPY ./fe-dessertation-admin/package.json .
-RUN npm install
-EXPOSE 8081
+RUN mv ./fe-dessertation-admin/node_modules .
 
+EXPOSE 8081
 CMD [ "node", "appServer.js" ]
