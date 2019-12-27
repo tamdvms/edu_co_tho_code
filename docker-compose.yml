@@ -22,3 +22,14 @@ services:
         - basic
     depends_on:
       - edu_mongodb
+  edu_fe:
+    image: edu_fe:1.0
+    container_name: edu_fe
+    restart: always
+    ports:
+      - "127.0.0.1:8082:8082"
+    networks:
+        - basic
+    depends_on:
+      - edu_mongodb
+      - edu_api

@@ -2,24 +2,16 @@ FROM node:8
 
 WORKDIR /opt
 COPY ./fe-dessertation-client/ ./fe-dessertation-client
-RUN ls
 
 WORKDIR /opt/fe-dessertation-client
-
 RUN npm install
-
 RUN npm run build
 
-
 WORKDIR /opt
-RUN pwd
-RUN ls
-RUN ls ./fe-dessertation-client
 RUN mv ./fe-dessertation-client/dist .
 COPY ./fe-dessertation-client/appServer.js .
 COPY ./fe-dessertation-client/package.json .
 RUN mv ./fe-dessertation-client/node_modules .
 
 EXPOSE 8082
-
 CMD [ "node", "appServer.js" ]
