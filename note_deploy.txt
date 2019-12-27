@@ -14,4 +14,5 @@
 	- Ref: build.sh
 
 - Account mặc định:
-	admin/admin113
+	- Admin page: admin/admin113
+	- Frontend page: tam@dvms.vn/123456
