@@ -15,4 +15,4 @@ RUN npm install
 EXPOSE 8083
 
 #CMD [ "node", "app.js", "--prod", "--port 8083"] => must fix cors
-CMD [ "node", "app.js", "--port" "8083"]
+CMD [ "node", "app.js", "--port", "8083"]
